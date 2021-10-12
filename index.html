@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600;700;800&display=swap" rel="stylesheet">
     <script src="assets/js/tailwind.config.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/main.js"></script>
     <title>Document</title>
 </head>
@@ -61,10 +62,31 @@
               <p class="leading-normal text-base md:text-2xl mb-8 text-center md:text-left">
                 making your day a little less shit
               </p>
-    
-              <form class="bg-gray-900 opacity-75 w-full shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4">
+              
+              <!-- FORM JS -->
+              <script>
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script>
+function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/19333/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+</script>         
+
+                <form class="bg-gray-900 opacity-75 w-full shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4" id="myForm">
                 <div class="mb-4">
-                  <label class="block text-blue-300 py-2 font-bold mb-2" for="emailaddress">
+                  <label class="block text-blue-300 py-2 font-bold mb-2" for="email">
                     Signup for our newsletter
                   </label>
                   <input
@@ -72,11 +94,13 @@
                     id="emailaddress"
                     type="text"
                     placeholder="you@somewhere.com"
+                    name="email"
                   />
                 </div>
     
                 <div class="flex items-center justify-between pt-4">
                   <button
+                    onclick='SubForm()'
                     class="bg-gradient-to-r from-purple-800 to-green-500 hover:from-pink-500 hover:to-green-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
                     type="button"
                   >
