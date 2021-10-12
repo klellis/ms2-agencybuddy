@@ -13,9 +13,10 @@ body {
 }
 
 nav {
-    background: #2193b0;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #6c63ff;  /* fallback for old browsers */
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .main-container {
@@ -64,4 +65,37 @@ h1 {
 
 .calc-header {
     text-align: center !important;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(1, 20vw);
+    grid-gap: 15px;
+}
+
+.pexel-item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo-info {
+  width: 100%;
+  padding: 10px;
+  background-color: #00000040;
+  color: aliceblue;
+  font-weight: 500;
+  transition: .5s ease-in-out bottom;
+}
+
+.pexel-item, .photo-info:hover{
+    box-shadow: 0px 0px 20px 3px #00000042;
+  }
+  .item:nth-last-child(1){
+    margin-bottom: 0;
+  }
+
+.hero {
+    margin-top: -80px;
 }

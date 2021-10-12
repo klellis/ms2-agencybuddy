@@ -9,8 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.2/chart.esm.js" integrity="sha512-IPqefcmFCuGcYxl/uIjvyCXwh5T9+EB2MFT7W9RUZd20d7PLfgdT975xdhyesvdXH6Au8SyXOw1236LY1lFl5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/tailwind.config.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/chart.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -48,54 +49,12 @@
       <!-- HERO -->
    
           <!--Main-->
-          <div class="container pt-24 md:pt-36 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-            <!--Left Col-->
-            <div class="hero flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
-              <h1 class="my-4 text-5xl md:text-5xl text-white opacity-75 font-bold leading-tight text-center md:text-left">
-                Your new
-                <span class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">
-                  favourite
-                </span>
-                work mate
-              </h1>
-              <p class="leading-normal text-base md:text-2xl mb-8 text-center md:text-left">
-                making your day a little less shit
-              </p>
-    
-              <form class="bg-gray-900 opacity-75 w-full shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4">
-                <div class="mb-4">
-                  <label class="block text-blue-300 py-2 font-bold mb-2" for="emailaddress">
-                    Signup for our newsletter
-                  </label>
-                  <input
-                    class="shadow appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
-                    id="emailaddress"
-                    type="text"
-                    placeholder="you@somewhere.com"
-                  />
-                </div>
-    
-                <div class="flex items-center justify-between pt-4">
-                  <button
-                    class="bg-gradient-to-r from-purple-800 to-green-500 hover:from-pink-500 hover:to-green-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
-                    type="button"
-                  >
-                    Sign Up
-                  </button>
-                </div>
-              </form>
+          <div class="line-chart">
+            <div class="aspect-ratio">
+              <canvas id="chart"></canvas>
             </div>
-    
-            <!--Right Col-->
-            <div class="hero w-full xl:w-3/5 p-12 overflow-hidden">
-                
-              <img class="mx-auto w-full md:w-4/5 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6" src="assets/images/undraw_content_team_3epn.svg" />
-              
-            </div>
-    
-            <div class="mx-auto md:pt-16">
-              <p class="text-blue-400 font-bold pb-8 lg:pb-6 text-center">
-             
+          </div>
+
     
             <!--Footer-->
             <div class="w-full pt-16 pb-6 text-sm text-center md:text-left fade-in">
@@ -105,6 +64,7 @@
             </div>
           </div>
         </div>
+        
       </body>
 </body>
 </html>

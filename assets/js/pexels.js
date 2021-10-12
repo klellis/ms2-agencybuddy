@@ -53,7 +53,7 @@ async function curatedPhotos() {
 // search particular photos
 async function searchPhotos(query) {
 	clearGallery();
-	fetchLink = `https://api.pexels.com/v1/search?query=${query}&per_page=20&page=1`;
+	fetchLink = `https://api.pexels.com/v1/search?query=${query}&per_page=10&page=1`;
 	const data = await fetchAPI(fetchLink);
 	generatePictures(data);
 }
@@ -66,12 +66,14 @@ function generatePictures(data) {
 
 		// photo element
 		galleryImg.innerHTML = `
-            <img src=${photo.src.large}  alt=${photo.photographer}/>
-            <p class="name">${photo.photographer}</p>
+        
+            <img class="pexel-item" src=${photo.src.medium}  alt=${photo.photographer}/>
+            <p class="pexel-info>${photo.photographer}</p>
             <div class="photo-info">
-                <a href=${photo.photographer_url} target="_blank" class="name">More photos</a>
-                <a href=${photo.src.original} target="_blank" class="download">Download</a>
+                <a href=${photo.photographer_url} target="_blank" class="photo-info">More photos</a>
+                <a href=${photo.src.original} target="_blank" class="photo-info">Download</a>
             </div>
+           
         `;
 		gallery.appendChild(galleryImg);
 	});
