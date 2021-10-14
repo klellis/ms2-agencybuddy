@@ -49,6 +49,7 @@
         </div>
       </nav>
 
+      <!-- BAR CHART -->
      
       <div class="main-chart-container">
          <h1>Quick Charts</h1>
@@ -92,6 +93,84 @@
         </div>
         </div>
       </div>
+
+           <!-- BAR CHART JS -->
+           <script>
+            var ctx = document.getElementById('barChart').getContext('2d');
+            var barChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['', '', '', '', '', ''],
+                    datasets: [{
+                        label: '',
+                        data: [12, 19, 3, 5, 2, 3],
+                        backgroundColor: [
+                            'rgba(105, 48, 195, 0.6)',
+                            'rgba(94, 96, 206, 0.6)',
+                            'rgba(78, 168, 222, 0.6)',
+                            'rgba(72, 191, 227, 0.6)',
+                            'rgba(100, 223, 223, 0.6)',
+                            'rgba(128, 255, 219, 0.6)'
+                        ],
+                        borderColor: [
+                            'rgba(105, 48, 195, 1)',
+                            'rgba(94, 96, 206, 1)',
+                            'rgba(78, 168, 222, 1)',
+                            'rgba(72, 191, 227, 1)',
+                            'rgba(100, 223, 223, 1)',
+                            'rgba(128, 255, 219, 1)'
+                        ],
+                        borderWidth: 3
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+            
+            function barChart1(barvalues) {
+                console.log(barvalues.value)
+                barChart.config.data.datasets[0].data[0] = barvalues.value;
+                barChart.update();
+              }
+            
+              function barChart2(barvalues) {
+                console.log(barvalues.value)
+                barChart.config.data.datasets[0].data[1] = barvalues.value;
+                barChart.update();
+              }
+            
+              function barChart3(barvalues) {
+                console.log(barvalues.value)
+                barChart.config.data.datasets[0].data[2] = barvalues.value;
+                barChart.update();
+              }
+            
+              function barChart4(barvalues) {
+                console.log(barvalues.value)
+                barChart.config.data.datasets[0].data[3] = barvalues.value;
+                barChart.update();
+              }
+            
+              function barChart5(barvalues) {
+                console.log(barvalues.value)
+                barChart.config.data.datasets[0].data[4] = barvalues.value;
+                barChart.update();
+              }
+            
+              function barChart6(barvalues) {
+                console.log(barvalues.value)
+                barChart.config.data.datasets[0].data[5] = barvalues.value;
+                barChart.update();
+              }
+            
+    </script>  
+
+    <!-- LINE CHART -->
           <div class="linechart-container">
             <div class="line-col2">
               <div class="line-border">
@@ -133,86 +212,12 @@
           </div>
     </div>
 
-      <!-- BAR CHART JS -->
-      <script>
-        var ctx = document.getElementById('barChart').getContext('2d');
-        var myChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ['', '', '', '', '', ''],
-                datasets: [{
-                    label: '',
-                    data: [12, 19, 3, 5, 2, 3],
-                    backgroundColor: [
-                        'rgba(105, 48, 195, 0.6)',
-                        'rgba(94, 96, 206, 0.6)',
-                        'rgba(78, 168, 222, 0.6)',
-                        'rgba(72, 191, 227, 0.6)',
-                        'rgba(100, 223, 223, 0.6)',
-                        'rgba(128, 255, 219, 0.6)'
-                    ],
-                    borderColor: [
-                        'rgba(105, 48, 195, 1)',
-                        'rgba(94, 96, 206, 1)',
-                        'rgba(78, 168, 222, 1)',
-                        'rgba(72, 191, 227, 1)',
-                        'rgba(100, 223, 223, 1)',
-                        'rgba(128, 255, 219, 1)'
-                    ],
-                    borderWidth: 3
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-        
-        function barChart1(barvalues) {
-            console.log(barvalues.value)
-            myChart.config.data.datasets[0].data[0] = barvalues.value;
-            myChart.update();
-          }
-        
-          function barChart2(barvalues) {
-            console.log(barvalues.value)
-            myChart.config.data.datasets[0].data[1] = barvalues.value;
-            myChart.update();
-          }
-        
-          function barChart3(barvalues) {
-            console.log(barvalues.value)
-            myChart.config.data.datasets[0].data[2] = barvalues.value;
-            myChart.update();
-          }
-        
-          function barChart4(barvalues) {
-            console.log(barvalues.value)
-            myChart.config.data.datasets[0].data[3] = barvalues.value;
-            myChart.update();
-          }
-        
-          function barChart5(barvalues) {
-            console.log(barvalues.value)
-            myChart.config.data.datasets[0].data[4] = barvalues.value;
-            myChart.update();
-          }
-        
-          function barChart6(barvalues) {
-            console.log(barvalues.value)
-            myChart.config.data.datasets[0].data[5] = barvalues.value;
-            myChart.update();
-          }
-        
-</script>     
+    
 
    <!-- LINE CHART JS -->
    <script>
     var ctx = document.getElementById('lineChart').getContext('2d');
-    var myChart = new Chart(ctx, {
+    var lineChart = new Chart(ctx, {
         type: 'line',
         data: {
             labels: ['', '', '', '', '', ''],
@@ -239,40 +244,40 @@
         }
     });
     
-    function lineChart1(barvalues) {
-        console.log(barvalues.value)
-        myChart.config.data.datasets[0].data[0] = barvalues.value;
+    function lineChart1(linevalues) {
+        console.log(linevalues.value)
+        lineChart.config.data.datasets[0].data[0] = linevalues.value;
         myChart.update();
       }
     
-      function lineChart2(barvalues) {
-        console.log(barvalues.value)
-        myChart.config.data.datasets[0].data[1] = barvalues.value;
-        myChart.update();
+      function lineChart2(linevalues) {
+        console.log(linevalues.value)
+        lineChart.config.data.datasets[0].data[1] = linevalues.value;
+        lineChart.update();
       }
     
-      function lineChart3(barvalues) {
-        console.log(barvalues.value)
-        myChart.config.data.datasets[0].data[2] = barvalues.value;
-        myChart.update();
+      function lineChart3(linevalues) {
+        console.log(linevalues.value)
+        lineChart.config.data.datasets[0].data[2] = linevalues.value;
+        lineChart.update();
       }
     
-      function lineChart4(barvalues) {
-        console.log(barvalues.value)
-        myChart.config.data.datasets[0].data[3] = barvalues.value;
-        myChart.update();
+      function lineChart4(linevalues) {
+        console.log(linevalues.value)
+        lineChart.config.data.datasets[0].data[3] = linevalues.value;
+        lineChart.update();
       }
     
-      function lineChart5(barvalues) {
-        console.log(barvalues.value)
-        myChart.config.data.datasets[0].data[4] = barvalues.value;
-        myChart.update();
+      function lineChart5(linevalues) {
+        console.log(linevalues.value)
+        lineChart.config.data.datasets[0].data[4] = linevalues.value;
+        lineChart.update();
       }
     
-      function lineChart6(barvalues) {
-        console.log(barvalues.value)
-        myChart.config.data.datasets[0].data[5] = barvalues.value;
-        myChart.update();
+      function lineChart6(linevalues) {
+        console.log(linevalues.value)
+        lineChart.config.data.datasets[0].data[5] = linevalues.value;
+        lineChart.update();
       }
     
 </script>  
