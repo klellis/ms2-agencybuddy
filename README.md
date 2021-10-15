@@ -6,11 +6,11 @@ Link to site: https://klellis.github.io/ms2-agencybuddy/
 This project was made with the modern Digital Marketer in mind.
 Coming myself from this background I wanted to create a tool/resource that would be useful and insightful for a Digital Marketer in their daily life. 
 
-I often found myself stressed out and pressed for time and tasks that i'd usually be able to do without issue seemed impossible because there was so much going on and to prepare for. 
+I often found myself stressed out and pressed for time; tasks that i'd usually be able to do without issue seemed impossible because there was so much going on and too much to prepare for. 
 
-I created some basic tools that I would use in my every day life. These are real life things that I have previously found myself Googling on a regular basis but they never gave me exactly what I was asking for. 
+I created some basic tools that I would use in my every day life as a Digital Marketer. These are real life problems that I regularly found myself looking for solutions for online, but never finding exactly what I needed. 
 
-Also in mind is the prospect of my future career. Having an understanding of the digital marketing world and applying that to my new learnings in front end development will hopefully show potential employers that I have a solid all round understanding of their business needs and can add real value.
+Also in mind is the prospect of my future career. Having an understanding of the digital marketing world and applying that to my new knowledge in front-end development will hopefully show potential employers that I have a solid all round understanding of their business needs and can add real value.
 
 
 ## Resources used in this project
@@ -26,18 +26,18 @@ Also in mind is the prospect of my future career. Having an understanding of the
  ## About
 
  ### Tailwind CSS 
- I wanted to challenge myself with a new css framework having only previously used custom and Bootstrap given that it is ever evolving and Bootstrap (arguably) is becoming less common in modern website builds. 
+ I wanted to challenge myself with a new css framework (having only previously used custom and Bootstrap), given that it is ever evolving and Bootstrap is (arguably) becoming less common in modern website builds. 
 
  Some of the pro's to this were the ease of typing in some easy inline Tailwind syntax to achieve professional looking results. However, I did find that I caused myself some issues and confusion when I realised I needed to demonstrate custom CSS along side this. 
 
- This resulted in what I feel is some unnecessary custom CSS with the use of extensive media queries to fix what should have been easily resolved because I did not yet fully understand the Tailwind framework.
+ This resulted in what I feel is some unnecessary custom CSS with the use of extensive media queries to fix what should have been easily resolved, because I did not yet fully understand the Tailwind framework.
 
  I also made use of some simple Tailwind animations. As my design is simple I added some subtle hover animations to add some movement.
 
   ### Quick Charts (Chart js + custom)
-  This was used to create the charts seen on the Quick Charts page. After reading through the documentation on their website I found it relatively easy to implement the customisations that I wanted to achieve. This provided me with some straight out of the box charts but also challenging me to understand more about javascript to manipulate the boilerplate that was there to enable me to create user interactivity. 
+  This was used to create the charts seen on the Quick Charts page. After reading through the documentation on their website I found it relatively easy to implement the customisations that I wanted to achieve. This provided me with some straight out of the box charts but also challenged me to understand more about javascript in order to manipulate the boilerplate that was there to enable me to create user interactivity. 
 
-  If I had more time, and perhaps in the future what I would like to add to the current functionality that I have is enabling user interactivity further allowing customisations of labels and colours. 
+  If I had more time, and perhaps in the future, what I would like to add to the current functionality that I have is enabling user interactivity further e.g. allowing customisations of labels and colours. 
 
   ### KPI Calculator
 
@@ -45,11 +45,11 @@ Also in mind is the prospect of my future career. Having an understanding of the
 
   ### Book A session
 
-  I could have used a Tailwind component to add this in which had further functionlity than what it currently does. However did not challenge me to write this custom JS and understand it myself. I'd like this functionality in the future to also allow picking a time and sending a confirmation email.
+  I could have used a Tailwind component to add this in, which would have had further functionlity than what I have used. However, it did not challenge me to write this custom JS and understand it myself. I'd like this functionality in the future to also allow picking a time and sending a confirmation email.
 
    ### Modal
 
-   On selecting a date on the Book A Session page a pop up Modal appears to acknowledge the request and says that a confirmation email will be sent with a time. I'd like to further that as mentioned above to include the time and date preferred and also automate an email response. 
+   On selecting a date on the Book A Session page, a pop up Modal appears to acknowledge the request and says that a confirmation email will be sent with a time. I'd like to further that as mentioned above to include the time and date preferred and also automate an email response. 
 
    ### Sign Up Form / API Spreadsheets
 
@@ -58,7 +58,7 @@ Also in mind is the prospect of my future career. Having an understanding of the
 
 
 ### Future Updates
-I initially wanted to create a keyword planner for marketers that use Google Ads/Search. There is a free Google Ads API however it required a lot of work in languages not relevant to this assessment so I did not feel it was a good use of my time for this particular project, but is something i'd very much like to add. I'd like this project to evolve into a website that provides valuable up-to-date benchmark data and insights for marketers as well as key every day tools to maintain visitor retention and popularity.
+I initially wanted to create a keyword planner for marketers that use Google Ads/Search. There is a free Google Ads API; however, it required a lot of work in languages not relevant to this assessment so I did not feel it was a good use of my time for this particular project. That said, it is something I'd very much like to add in the future. I'd like this project to evolve into a website that provides valuable up-to-date benchmark data and insights for marketers as well as key every day tools to maintain visitor retention and popularity.
   
 ## Validation
 
