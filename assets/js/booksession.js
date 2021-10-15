@@ -30,7 +30,6 @@ chosen_date.dataset.value = selectedDate;
 
 populateDates();
 
-date_picker_element.addEventListener('mouseover', toggleDatePicker);
 next_month_element.addEventListener('click', goToNextMonth);
 prev_month_element.addEventListener('click', goToPrevMonth);
 

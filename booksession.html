@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <script src="assets/js/tailwind.config.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
@@ -53,11 +54,14 @@
 
       <!-- DATE PICKER -->
       
-            <body class="book-session-body"> 
+            <body class="book-session-body "> 
               <h1>Schedule A Call</h1>
+              <div class="text-content">
+                <p>Select a date from the calendar to secure a free 60 minute consultation with a Digital Marketing Expert who can talk you through your marketing goals and how to improve your Media performance!</p>
+              </div>
 
-              <div class="book-session">
-                <div class="chosen-date"></div>
+              <div class="book-session ">
+                <div class="chosen-date "></div>
             
                 <div class="dates">
                   <div class="month">
@@ -69,7 +73,7 @@
                   <div class="days"></div>
                   
 
-                  <button id="modal-btn">Schedule Call</button>
+                  <button class="focus:ring transform transition hover:scale-105 duration-300 ease-in-out "id="modal-btn">Schedule Call</button>
 
                   <!-- Modal -->
                   <div id="bookingModal" class="modal">
@@ -81,41 +85,44 @@
                     </div>
                   
                   </div>
-
-                  <div class="text-content">
-                    <p>Select a date from the calendar to secure a free 60 minute consultation with a Digital Marketing Expert who can talk you through your marketing goals and how to improve your Media performance!</p>
-                  </div>
-                    
                   <script type="text/javascript" src="assets/js/booksession.js"></script>
               
                   <script>
-                    // Get the modal
+                    
                     var modal = document.getElementById("bookingModal");
-                    
-                    // Get the button that opens the modal
-                    var btn = document.getElementById("modal-btn");
-                    
-                    // Get the <span> element that closes the modal
+                    var btn = document.getElementById("modal-btn"); 
                     var span = document.getElementsByClassName("close")[0];
-                    
-                    // When the user clicks the button, open the modal 
+
                     btn.onclick = function() {
                       modal.style.display = "block";
                     }
                     
-                    // When the user clicks on <span> (x), close the modal
                     span.onclick = function() {
                       modal.style.display = "none";
                     }
-                    
-                    // When the user clicks anywhere outside of the modal, close it
                     window.onclick = function(event) {
                       if (event.target == modal) {
                         modal.style.display = "none";
                       }
                     }
                     </script>
-                    
+               <!--Footer-->
+           
+               <footer class="footer-1 sm:py-12">
+                <div class="container mx-auto">
+                    <div class="flex sm:justify-center ">
+                        <a href="https://github.com/klellis" target="_blank" class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 text-gray-600 hover:text-white hover:bg-indigo-500 hover:border-indigo-500">
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/kl_ellis/" target="_blank" class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 ml-2 text-gray-600 hover:text-white hover:bg-indigo-500 hover:border-indigo-500">
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kayleighellis/" target="_blank" class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 ml-2 text-gray-600 hover:text-white hover:bg-indigo-500 hover:border-indigo-500">
+                          <i class="fab fa-linkedin"></i>
+                        </a>
+                      </div>
+                </div>
+            </footer>     
       </body>
 
 </html>

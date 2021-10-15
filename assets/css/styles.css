@@ -29,32 +29,131 @@ nav {
 
 .main-form {
 margin-top: 50px;
+margin-left: -220px;
 justify-content: flex-start;
 flex-direction: row;
-width: 40rem;
+width: 100%;
 flex-wrap: wrap;
 display: inline-block;
 }
 
-.main-result {
-    
- 
-    align-items: center;
-    flex-direction: row;
-    width: 40rem;
-    display: inline-block;
-}
+
 
 #get-results {
-    margin: 15px;
-    align-items: center;
-    justify-content:center;
-    width: 80rem;
-    background: #ec008c;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+     
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 700%);
+    padding: 10px;
+      height:50px;
+      width: 250px;
+      border-radius: 3px;
+      color: #fff;
+      background: #8E2DE2;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     
 }
+
+.kpi-footer {
+    transform: translate(0, 40%);
+}
+
+
+@media only screen and (max-width: 1024px){
+
+    .main-form {
+        margin-top: 50px;
+        margin-left: 20px;
+        width: 80vw;
+    }
+    
+        #get-results {
+            transform: translate(-50%, 1000%); 
+            
+       }
+
+       .kpi-footer {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, 240%);
+       }
+        
+    }        
+
+
+    @media only screen and (max-width: 768px){
+        #get-results {
+            transform: translate(-50%, 1380%); 
+           
+            
+            
+       }
+
+       .main-form {
+           margin-left: 20px;
+       }
+
+       .kpi-footer {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, 320%);
+       }
+        
+      
+    } 
+    
+    @media only screen and (max-width: 640px){
+        #get-results {
+            transform: translate(-50%, 1540%); 
+           
+            
+            
+       }
+
+       .main-form {
+           margin-left: 60px;
+       }
+        
+       .kpi-footer {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, 2680%);
+       }
+      
+    }  
+
+
+    @media only screen and (max-width: 414px)
+
+    {
+        #get-results {
+            transform: translate(-50%, 1840%); 
+           
+            
+            
+       }
+
+       .main-form {
+           margin-left: 30px;
+       }
+        
+       .kpi-footer {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, 3100%);
+       }
+      
+    }  
+
+
+
+
 
 h1 {
     margin-top: 30px !important;
@@ -286,11 +385,10 @@ h1 {
   .book-session {
 	position: relative;
 	width: 100%;
-	max-width: 320px;
-	height: 60px;
+	max-width: 520px;
+	height: 50px;
 	
-	margin: 30px 100px;
-	font-weight: bold;
+	margin: 30px auto;
     text-align: center;
     font-size: 18px;
 	cursor: pointer;
@@ -363,8 +461,8 @@ h1 {
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    position: fixed;
+    z-index: 50; /* Sit on top */
     padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
@@ -387,6 +485,7 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
     align: center;
     justify-content: center;
     width: 80%;
+    
     
   }
   
@@ -418,10 +517,11 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
   }
 
   .text-content {
-width:800px;
-position: relative;
-justify-content: center;
-margin-left: 500px;
-margin-top: -300px;
-text-align: left;
+width:70%;
+margin: 20px auto;
+text-align: center;
+flex: wrap;
+
   }
+
+

@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="assets/js/tailwind.config.js"></script>
     
@@ -59,13 +60,13 @@
          <p>Key in your numbers and make it look like you've been knee deep in data all day</p>
           <div class="twocol-container">
         <div class="chart-col1">
-              <div class="chart-border">
+              <div class="chart-border focus:ring transform transition hover:scale-105 duration-300 ease-in-out">
           <canvas id="barChart"></canvas>
         </div>
         </div>
       
         <div class="chart-col2">
-           <div class="form-card">
+           <div class="form-card focus:ring transform transition hover:scale-105 duration-300 ease-in-out">
           <h3>Type your numbers below:</h3>
           <ul>
             <li>
@@ -176,12 +177,12 @@
     <!-- LINE CHART -->
           <div class="linechart-container">
             <div class="line-col2">
-              <div class="line-border">
+              <div class="line-border focus:ring transform transition hover:scale-105 duration-300 ease-in-out">
                 <canvas id="lineChart"></canvas>
               </div>
             </div>
             <div class="line-col1">
-              <div class="line-form-card">
+              <div class="line-form-card line-border focus:ring transform transition hover:scale-105 duration-300 ease-in-out">
                 <h3>Type your numbers below:</h3>
                 <ul>
                   <li>
@@ -284,6 +285,25 @@
       }
     
 </script>  
+
+<!--Footer-->
+           
+<footer class="footer-1 sm:py-12">
+  <div class="container mx-auto">
+      <div class="flex sm:justify-center ">
+          <a href="https://github.com/klellis" target="_blank" class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 text-gray-600 hover:text-white hover:bg-indigo-500 hover:border-indigo-500">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.instagram.com/kl_ellis/" target="_blank" class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 ml-2 text-gray-600 hover:text-white hover:bg-indigo-500 hover:border-indigo-500">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/kayleighellis/" target="_blank" class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 ml-2 text-gray-600 hover:text-white hover:bg-indigo-500 hover:border-indigo-500">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+  </div>
+
+</footer>
       </body>
 
 </html>
