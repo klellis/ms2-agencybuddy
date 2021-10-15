@@ -1,6 +1,8 @@
 # MS2 - AgencyBuddy. - Kay Ellis @ Code Institute
 ![AgencyBuddy Mockup](/assets/images/mockup.png)
 
+Link to site: https://klellis.github.io/ms2-agencybuddy/
+
 This project was made with the modern Digital Marketer in mind.
 Coming myself from this background I wanted to create a tool/resource that would be useful and insightful for a Digital Marketer in their daily life. 
 
