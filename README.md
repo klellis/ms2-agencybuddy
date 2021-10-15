@@ -90,5 +90,9 @@ I initially wanted to create a keyword planner for marketers that use Google Ads
 ![AgencyBuddy Mockup](/assets/images/bookingtablet.png)
 ![AgencyBuddy Mockup](/assets/images/bookingmobile.png)
 
+#### Testing
+
+This has been tested for resposiveness on an iPhone 12, iPhone X, iMac and iPad Pro as well as a Google Pixel 2 XL and Chrome Dev Tools.
+
 
 
