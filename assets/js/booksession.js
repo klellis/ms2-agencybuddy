@@ -1,17 +1,12 @@
 
 // date picker
 
-const date_picker_element = document.querySelector('.book-session');
-const chosen_date = document.querySelector('.book-session .chosen-date');
-const dates_element = document.querySelector('.book-session .dates');
-const month_element = document.querySelector('.book-session .dates .month .mth');
-const next_month_element = document.querySelector('.book-session .dates .month .next-month');
-const prev_month_element = document.querySelector('.book-session .dates .month .previous-month');
-const days_element = document.querySelector('.book-session .dates .days');
-
-const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-
-
+var chosen_date = document.querySelector('.book-session .chosen-date');
+var month_element = document.querySelector('.book-session .dates .month .mth');
+var next_month_element = document.querySelector('.book-session .dates .month .next-month');
+var prev_month_element = document.querySelector('.book-session .dates .month .previous-month');
+var days_element = document.querySelector('.book-session .dates .days');
+var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
 let date = new Date();
 let day = date.getDate();
@@ -36,7 +31,7 @@ prev_month_element.addEventListener('click', goToPrevMonth);
 
 
 // if month is greater than month 11 (dec) the next month will start from month 0 and add year
-function goToNextMonth (e) {
+function goToNextMonth () {
 	month++;
 	if (month > 11) {
 		month = 0;
@@ -48,7 +43,7 @@ function goToNextMonth (e) {
 
 
 // if month is lower than first month go to highest month and minus a year
-function goToPrevMonth (e) {
+function goToPrevMonth () {
 	month--;
 	if (month < 0) {
 		month = 11;
@@ -60,7 +55,7 @@ function goToPrevMonth (e) {
 
 
 // amend calendar to correct number of days per month 
-function populateDates (e) {
+function populateDates () {
 	days_element.innerHTML = '';
 	let amount_days = 31;
 
@@ -109,16 +104,6 @@ function populateDates (e) {
 	}
 }
 
-// checks event path contains selectors
-function checkEventPathForClass (path, selector) {
-	for (let i = 0; i < path.length; i++) {
-		if (path[i].classList && path[i].classList.contains(selector)) {
-			return true;
-		}
-	}
-	
-	return false;
-}
 function formatDate (d) {
 	let day = d.getDate();
 	if (day < 10) {
