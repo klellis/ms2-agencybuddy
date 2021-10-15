@@ -17,6 +17,7 @@ nav {
     background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+/* KPI CALCULATOR */
 .main-container {
     width: 100%;
     height: 100%;
@@ -34,8 +35,6 @@ flex-wrap: wrap;
 display: inline-block;
 }
 
-
-
 #get-results {
     position: absolute;
     left: 50%;
@@ -51,7 +50,10 @@ display: inline-block;
 }
 
 .kpi-footer {
-    transform: translate(0, 40%);
+    transform: translate(520%,50%);
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 1024px){
@@ -69,7 +71,7 @@ display: inline-block;
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translate(-50%, 240%);
+        transform: translate(-50%, 120%);
        }    
     }        
 
@@ -87,7 +89,7 @@ display: inline-block;
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translate(-50%, 320%);
+        transform: translate(-50%, 160%);
        } 
     } 
     
@@ -104,7 +106,7 @@ display: inline-block;
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translate(-50%, 2680%);
+        transform: translate(-50%, 220%);
        }
     }  
 
@@ -120,7 +122,8 @@ display: inline-block;
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translate(-50%, 3100%);
+        transform: translate(-50%, 350%);
+       
        }     
     }  
 
@@ -132,12 +135,10 @@ h1 {
     
 }
 
+
+/* QUICK CHARTS */
 .calc-header {
     text-align: center !important;
-}
-
-.hero {
-    margin-top: -80px;
 }
 
 .main-chart-container {
@@ -325,8 +326,16 @@ h1 {
         margin-top: 50px;
         margin-left: 150px;
     }
+    #chart-footer {
+        position: fixed;
+        bottom: 0;
+        margin-bottom: 20px;
+        margin-left: 33%;
+    }
   }
 
+
+  /* SCHEDULE A CALL */
   .book-session {
 	position: relative;
 	width: 100%;
@@ -405,8 +414,8 @@ h1 {
     padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    width: 100vw; /* Full width */
+    height: 55vh; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background: #8E2DE2;  /* fallback for old browsers */
     background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -453,3 +462,12 @@ text-align: center;
 }
 
 
+@media only screen and (max-width: 614px) {
+    #booking-footer {
+       
+       bottom: 0;
+       margin-left: 39%;
+       margin-top: 330px;
+       margin-bottom: 20px;
+    }
+}
